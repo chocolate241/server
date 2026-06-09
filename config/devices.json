@@ -1,0 +1,25 @@
+{
+  "devices": [
+    {
+      "id": "living",
+      "name": "đèn phòng khách",
+      "displayName": "Phòng khách",
+      "gpio": "D14",
+      "alias": ["phòng khách", "đèn khách", "khách", "living room", "living"]
+    },
+    {
+      "id": "bedroom",
+      "name": "đèn phòng ngủ",
+      "displayName": "Phòng ngủ",
+      "gpio": "D26",
+      "alias": ["phòng ngủ", "đèn ngủ", "ngủ", "bedroom"]
+    },
+    {
+      "id": "kitchen",
+      "name": "đèn phòng bếp",
+      "displayName": "Phòng bếp",
+      "gpio": "D27",
+      "alias": ["phòng bếp", "đèn bếp", "bếp", "kitchen"]
+    }
+  ]
+}

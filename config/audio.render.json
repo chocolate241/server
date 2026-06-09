@@ -1,0 +1,49 @@
+{
+  "audio": {
+    "sampleRate": 16000,
+    "bitDepth": 16,
+    "channels": 1
+  },
+  "vad": {
+    "silenceRmsThreshold": 500,
+    "silenceFrames": 10,
+    "adaptiveEnabled": true,
+    "noiseMultiplier": 1.35,
+    "noiseMargin": 120,
+    "startGraceMs": 1600,
+    "captureSafetyMs": 6000,
+    "minVoiceMs": 900,
+    "debugLog": false,
+    "logMs": 500
+  },
+  "stt": {
+    "preprocessEnabled": true,
+    "targetRms": 3500,
+    "targetPeak": 26000,
+    "maxGain": 4,
+    "highpassAlpha": 0.955,
+    "fallbackOnEmpty": true,
+    "candidatesEnabled": true,
+    "candidateRmsThreshold": 900,
+    "candidatePadMs": 450,
+    "candidateWindowMs": 3600,
+    "candidateEarlyScore": 100,
+    "verifyDeepgramEnabled": false,
+    "verifyDeepgramScope": "all_lights",
+    "verifyDeepgramMinConfidence": 0.55,
+    "whisperTimeoutMs": 20000,
+    "preloadWhisper": false,
+    "parallelProviders": false,
+    "tmpDeleteDelayMs": 60000,
+    "debugLog": false
+  },
+  "queue": {
+    "ackTimeoutMs": 900,
+    "retries": 2,
+    "betweenCommandsMs": 30
+  },
+  "protocol": {
+    "version": "2",
+    "compatibleVersions": ["1", "2"]
+  }
+}

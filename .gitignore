@@ -1,0 +1,14 @@
+.env
+.env.local
+config/local.env
+node_modules/
+__pycache__/
+.stt_stream/
+.tmp/
+tmp/
+record.wav
+voice_command.wav
+*.wav
+*.pyc
+.vscode/
+.DS_Store

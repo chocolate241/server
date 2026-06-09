@@ -1,0 +1,27 @@
+{
+  "name": "esp32server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "start:render": "node -e \"process.env.APP_MODE='render';process.env.STT_PROVIDER='deepgram';require('./src/server')\"",
+    "check": "node --check src/server.js && node --check src/parser/localParser.js && node --check src/stt/sttService.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@google/genai": "^2.6.0",
+    "@supabase/supabase-js": "^2.107.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "wav": "^1.0.2",
+    "ws": "^8.21.0"
+  }
+}
