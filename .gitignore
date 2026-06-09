@@ -12,3 +12,8 @@ voice_command.wav
 *.pyc
 .vscode/
 .DS_Store
+venv/
+node_modules/
+tmp/
+*.wav
+config/local.env
